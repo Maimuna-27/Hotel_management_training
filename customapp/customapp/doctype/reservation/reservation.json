@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:resrvation_id",
+ "creation": "2023-02-23 11:36:05.899609",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "resrvation_id",
+  "date_of_reservation",
+  "guest_name",
+  "room_name",
+  "room_number",
+  "price_details",
+  "availabililty",
+  "column_break_netub",
+  "check_in",
+  "check_out",
+  "adults",
+  "children",
+  "ac_non_ac",
+  "amended_from",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "resrvation_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Resrvation ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "date_of_reservation",
+   "fieldtype": "Date",
+   "label": "Date of Reservation"
+  },
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "label": "Guest Name"
+  },
+  {
+   "fieldname": "room_name",
+   "fieldtype": "Link",
+   "label": "Room Name",
+   "options": "Room Name"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Link",
+   "label": "Room Number",
+   "options": "Room Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "availabililty",
+   "fieldtype": "Check",
+   "label": "Availabililty"
+  },
+  {
+   "fieldname": "adults",
+   "fieldtype": "Select",
+   "label": "Adults",
+   "options": "0\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "children",
+   "fieldtype": "Select",
+   "label": "Children",
+   "options": "0\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "ac_non_ac",
+   "fieldtype": "Select",
+   "label": "Ac Non Ac",
+   "options": "Ac\nNon Ac"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Reservation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "price_details",
+   "fieldtype": "Float",
+   "label": "Price Details"
+  },
+  {
+   "fieldname": "column_break_netub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "check_in",
+   "fieldtype": "Duration",
+   "label": "Check In"
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Duration",
+   "label": "Check Out"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-23 12:52:27.899655",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Reservation",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

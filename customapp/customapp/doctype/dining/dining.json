@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-23 12:51:05.817652",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "breakfast",
+  "brunch",
+  "lunch",
+  "snacks_and_tea",
+  "dinner"
+ ],
+ "fields": [
+  {
+   "fieldname": "breakfast",
+   "fieldtype": "Data",
+   "label": "BreakFast"
+  },
+  {
+   "fieldname": "brunch",
+   "fieldtype": "Data",
+   "label": "Brunch"
+  },
+  {
+   "fieldname": "lunch",
+   "fieldtype": "Data",
+   "label": "Lunch"
+  },
+  {
+   "fieldname": "snacks_and_tea",
+   "fieldtype": "Data",
+   "label": "Snacks And Tea"
+  },
+  {
+   "fieldname": "dinner",
+   "fieldtype": "Data",
+   "label": "Dinner"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-23 12:51:05.817652",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Dining",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

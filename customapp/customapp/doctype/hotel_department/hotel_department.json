@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:department_name",
+ "creation": "2023-02-23 12:31:53.425276",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department_name",
+  "amended_from",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_hotel_department"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Data",
+   "label": "Department Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Hotel_Department",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Hotel_Department"
+  },
+  {
+   "fieldname": "parent_hotel_department",
+   "fieldtype": "Link",
+   "label": "Parent Hotel_Department",
+   "options": "Hotel_Department"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2023-02-23 13:07:41.385645",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Hotel_Department",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_hotel_department",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

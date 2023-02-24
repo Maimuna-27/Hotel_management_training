@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-23 11:51:35.118836",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reservation_id",
+  "guest_name",
+  "identification",
+  "phone_number",
+  "full_adfress",
+  "email",
+  "allocated_room_number",
+  "total_price_column",
+  "price",
+  "discount",
+  "subtotal",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "reservation_id",
+   "fieldtype": "Link",
+   "label": "Reservation ID",
+   "options": "Reservation"
+  },
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "label": "Guest Name"
+  },
+  {
+   "fieldname": "identification",
+   "fieldtype": "Data",
+   "label": "Identification"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "full_adfress",
+   "fieldtype": "Small Text",
+   "label": "Full Address"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "allocated_room_number",
+   "fieldtype": "Data",
+   "label": "Allocated Room Number"
+  },
+  {
+   "fieldname": "total_price_column",
+   "fieldtype": "Column Break",
+   "label": "Total Price"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "label": "Price"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Data",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Data",
+   "label": "Subtotal"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Billing Information",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-24 15:12:09.156694",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Billing Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
