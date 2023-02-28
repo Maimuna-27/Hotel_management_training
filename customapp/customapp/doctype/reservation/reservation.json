@@ -29,7 +29,7 @@
    "fieldname": "resrvation_id",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Resrvation ID",
+   "label": "Reservation ID",
    "reqd": 1,
    "unique": 1
   },
@@ -90,9 +90,11 @@
    "read_only": 1
   },
   {
+   "fetch_from": "room_name.price",
    "fieldname": "price_details",
-   "fieldtype": "Float",
-   "label": "Price Details"
+   "fieldtype": "Data",
+   "label": "Price Details",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_netub",
@@ -119,7 +121,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-23 12:52:27.899655",
+ "modified": "2023-02-28 08:19:24.497410",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Reservation",
@@ -139,6 +141,7 @@
    "write": 1
   }
  ],
+ "show_preview_popup": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

@@ -1,43 +1,41 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:room_name",
- "creation": "2023-02-23 11:58:00.020410",
+ "autoname": "field:brunch_name",
+ "creation": "2023-02-26 07:56:57.597015",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "room_name",
-  "price",
+  "brunch_name",
+  "pricing",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "room_name",
+   "fieldname": "brunch_name",
    "fieldtype": "Data",
-   "label": "Room Name ",
+   "label": "Brunch Name",
    "unique": 1
+  },
+  {
+   "fieldname": "pricing",
+   "fieldtype": "Data",
+   "label": "Pricing"
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text Editor",
-   "label": "Description"
-  },
-  {
-   "fieldname": "price",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Price",
-   "unique": 1
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-28 08:14:00.398131",
+ "modified": "2023-02-27 05:23:51.855851",
  "modified_by": "Administrator",
  "module": "CustomApp",
- "name": "Room Name",
+ "name": "Brunch",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

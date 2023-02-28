@@ -41,8 +41,9 @@
   {
    "fieldname": "department_assigned",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Department Assigned",
-   "options": "System Admin\nHotel admin\nManager\nStaff\nReceptionist\nRoom service\nDining\nPick Up Service"
+   "options": "System Admin\nHotel admin\nManager\nFront Desk\nStaff\nReceptionist\nRoom service\nAccountant\nDining\nPick Up Service"
   },
   {
    "fieldname": "shift_timings",
@@ -63,7 +64,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-24 15:10:50.551101",
+ "modified": "2023-02-27 06:20:35.812222",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel_Employees",

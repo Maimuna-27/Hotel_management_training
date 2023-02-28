@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-26 07:03:53.460789",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "menu",
+  "categories",
+  "room_number",
+  "water_bottle",
+  "napkins",
+  "room_service",
+  "breakfast",
+  "meals",
+  "prices",
+  "brunch_tab",
+  "brunch_meals",
+  "pricing",
+  "lunch_tab",
+  "lunch_meal",
+  "pricings",
+  "side_dishes",
+  "dinner_tab",
+  "dinner_meal",
+  "dessert",
+  "price",
+  "delivery_column",
+  "do_you_want_to_pick_your_order",
+  "yes",
+  "noi_would_like_it_deliver_to_my_room",
+  "missed_something__please_add_it_in_here",
+  "subtotal",
+  "proceed_with_payment",
+  "amended_from",
+  "route"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "menu",
+   "fieldtype": "Heading",
+   "label": "Menu"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "categories",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Categories",
+   "options": "Dining"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Room Number",
+   "options": "Room Number"
+  },
+  {
+   "fieldname": "delivery_column",
+   "fieldtype": "Tab Break",
+   "label": "Delivery"
+  },
+  {
+   "fieldname": "do_you_want_to_pick_your_order",
+   "fieldtype": "Heading",
+   "label": "Do you want to pick your Order?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "noi_would_like_it_deliver_to_my_room",
+   "fieldtype": "Check",
+   "label": "No,I would like it deliver to my room."
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "cx Ordering form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "meals",
+   "fieldtype": "Link",
+   "label": "BreakFast Meals",
+   "options": "Breakfast"
+  },
+  {
+   "default": "0",
+   "fieldname": "water_bottle",
+   "fieldtype": "Check",
+   "label": "Water Bottle"
+  },
+  {
+   "fieldname": "breakfast",
+   "fieldtype": "Tab Break",
+   "label": "Breakfast"
+  },
+  {
+   "fieldname": "brunch_tab",
+   "fieldtype": "Tab Break",
+   "label": "Brunch "
+  },
+  {
+   "fieldname": "brunch_meals",
+   "fieldtype": "Link",
+   "label": "Brunch Meals",
+   "options": "Brunch"
+  },
+  {
+   "default": "0",
+   "fieldname": "napkins",
+   "fieldtype": "Check",
+   "label": "Napkins"
+  },
+  {
+   "fetch_from": "dinner_meal.dessert",
+   "fieldname": "dessert",
+   "fieldtype": "Link",
+   "label": "Dessert",
+   "options": "Dinner"
+  },
+  {
+   "fetch_from": "meals.pricing",
+   "fieldname": "prices",
+   "fieldtype": "Data",
+   "label": "Prices"
+  },
+  {
+   "fieldname": "lunch_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lunch"
+  },
+  {
+   "fieldname": "dinner_tab",
+   "fieldtype": "Tab Break",
+   "label": "Dinner"
+  },
+  {
+   "fetch_from": "brunch_meals.pricing",
+   "fieldname": "pricing",
+   "fieldtype": "Data",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "lunch_meal",
+   "fieldtype": "Link",
+   "label": "Lunch Meal",
+   "options": "Lunch"
+  },
+  {
+   "fetch_from": "lunch_meal.pricing",
+   "fieldname": "pricings",
+   "fieldtype": "Data",
+   "label": "Pricings "
+  },
+  {
+   "fetch_from": "lunch_meal.side_dishes",
+   "fieldname": "side_dishes",
+   "fieldtype": "Link",
+   "label": "side Dishes",
+   "options": "Lunch"
+  },
+  {
+   "fieldname": "dinner_meal",
+   "fieldtype": "Link",
+   "label": "Dinner Meal",
+   "options": "Dinner"
+  },
+  {
+   "fetch_from": "dinner_meal.pricing",
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "Price"
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Data",
+   "label": "Subtotal"
+  },
+  {
+   "bold": 1,
+   "fieldname": "missed_something__please_add_it_in_here",
+   "fieldtype": "Small Text",
+   "label": "Missed Something , Please Add it in here"
+  },
+  {
+   "bold": 1,
+   "fieldname": "proceed_with_payment",
+   "fieldtype": "Button",
+   "label": "Proceed with Payment"
+  },
+  {
+   "fieldname": "room_service",
+   "fieldtype": "Link",
+   "label": "Room Service",
+   "options": "Room Service"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-28 08:42:38.617872",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "cx Ordering form",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

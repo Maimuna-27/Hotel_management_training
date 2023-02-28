@@ -1,43 +1,47 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:room_name",
- "creation": "2023-02-23 11:58:00.020410",
+ "autoname": "field:lunch_meals",
+ "creation": "2023-02-26 07:58:25.622884",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "room_name",
-  "price",
+  "lunch_meals",
+  "pricing",
+  "side_dishes",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "room_name",
+   "fieldname": "lunch_meals",
    "fieldtype": "Data",
-   "label": "Room Name ",
+   "label": "Lunch Meals",
    "unique": 1
+  },
+  {
+   "fieldname": "pricing",
+   "fieldtype": "Data",
+   "label": "Pricings"
+  },
+  {
+   "fieldname": "side_dishes",
+   "fieldtype": "Data",
+   "label": "Side Dishes"
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text Editor",
+   "fieldtype": "Small Text",
    "label": "Description"
-  },
-  {
-   "fieldname": "price",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Price",
-   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-28 08:14:00.398131",
+ "modified": "2023-02-27 05:23:39.763138",
  "modified_by": "Administrator",
  "module": "CustomApp",
- "name": "Room Name",
+ "name": "Lunch",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
@@ -54,7 +58,10 @@
    "write": 1
   }
  ],
+ "search_fields": "pricing",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "lunch_meals"
 }

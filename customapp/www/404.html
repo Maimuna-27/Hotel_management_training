@@ -1,0 +1,35 @@
+{% extends "templates/web.html" %}
+
+{%- block title -%}{{_("Not Found")}}{%- endblock -%}
+
+{% block page_content %}
+
+<script>
+	window.is_404 = true;
+</script>
+
+<h1>⚠️ 404 Error ⚠️</h1>
+<style>
+	h1 {
+	  font-size: 50px; 
+	  font-weight: bold; 
+	  color: #12000d; 
+	  text-align: center;
+	  font-family: Cursive; 
+	  
+	}
+</style>
+
+<div class="error-page">
+	<img class="image" src="https://media.tenor.com/sgT7Gbm1XkIAAAAC/hello-kitty-love.gif" height="1112" data-width="70% />
+	<div class="mb-100 mt-20">
+			
+		<div class="error" style="font-size: 20px; font-family: Cursive;font-weight: bold;">
+			Dont <a href="/contact"> contact us</a> even if you believe this is an error
+		</div>
+		<div class="mt-4 back-to-home"><a href='/' class='btn btn-primary'>{{ _("Go Back") }}</a></div>
+		
+	</div>
+</div>
+
+{% endblock %}

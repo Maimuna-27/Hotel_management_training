@@ -1,12 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:dining_name",
  "creation": "2023-02-23 12:51:05.817652",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "dining_name",
   "breakfast",
   "brunch",
   "lunch",
@@ -17,7 +19,8 @@
   {
    "fieldname": "breakfast",
    "fieldtype": "Data",
-   "label": "BreakFast"
+   "label": "BreakFast",
+   "unique": 1
   },
   {
    "fieldname": "brunch",
@@ -38,14 +41,21 @@
    "fieldname": "dinner",
    "fieldtype": "Data",
    "label": "Dinner"
+  },
+  {
+   "fieldname": "dining_name",
+   "fieldtype": "Data",
+   "label": "Dining Name",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-23 12:51:05.817652",
+ "modified": "2023-02-26 07:21:28.056657",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Dining",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

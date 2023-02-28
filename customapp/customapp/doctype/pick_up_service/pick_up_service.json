@@ -1,43 +1,41 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:room_name",
- "creation": "2023-02-23 11:58:00.020410",
+ "autoname": "field:pick_up",
+ "creation": "2023-02-26 08:02:45.703137",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "room_name",
-  "price",
+  "pick_up",
+  "location",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "room_name",
+   "fieldname": "pick_up",
    "fieldtype": "Data",
-   "label": "Room Name ",
+   "label": "Pick Up ",
    "unique": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Service type"
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text Editor",
+   "fieldtype": "Small Text",
    "label": "Description"
-  },
-  {
-   "fieldname": "price",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Price",
-   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-28 08:14:00.398131",
+ "modified": "2023-02-27 04:22:01.288815",
  "modified_by": "Administrator",
  "module": "CustomApp",
- "name": "Room Name",
+ "name": "Pick Up Service",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
@@ -54,7 +52,9 @@
    "write": 1
   }
  ],
+ "show_preview_popup": 1,
  "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "pick_up"
 }

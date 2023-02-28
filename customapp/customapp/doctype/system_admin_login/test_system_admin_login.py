@@ -1,10 +1,9 @@
 # Copyright (c) 2023, mymuna and Contributors
 # See license.txt
 
-#import frappe
+# import frappe
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestHotel_Employees(FrappeTestCase):
-	
+class TestSystem_Admin_Login(FrappeTestCase):
 	pass

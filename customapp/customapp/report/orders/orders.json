@@ -1,0 +1,30 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-02-27 05:41:43.677390",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "modified": "2023-02-27 05:42:55.799647",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Orders",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "cx Ordering form",
+ "report_name": "Orders",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ]
+}

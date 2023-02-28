@@ -2,7 +2,9 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Reservation', {
-	// refresh: function(frm) {
-
-	// }
-});
+	//refresh(frm) {
+		after_save(frm){
+			frappe.msgprint("Thankyou for your Reservation");
+		}
+	//}
+})
