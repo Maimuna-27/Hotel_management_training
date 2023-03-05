@@ -211,13 +211,14 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Route"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-28 08:42:38.617872",
+ "modified": "2023-03-05 08:52:38.839746",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "cx Ordering form",

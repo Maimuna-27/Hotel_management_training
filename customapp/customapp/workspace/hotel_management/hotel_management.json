@@ -1,0 +1,239 @@
+{
+ "charts": [
+  {
+   "chart_name": "Reservations",
+   "label": "Reservations"
+  }
+ ],
+ "content": "[{\"id\":\"GQfz3_rhPN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Hotel Management</span>\",\"col\":12}},{\"id\":\"IqS5b9AWAh\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Reservations\",\"col\":12}},{\"id\":\"oTvUR-9x6Y\",\"type\":\"card\",\"data\":{\"card_name\":\"Admin Dashboard\",\"col\":4}},{\"id\":\"19GTwRCcbl\",\"type\":\"card\",\"data\":{\"card_name\":\"Services\",\"col\":4}},{\"id\":\"smyrZcK1g2\",\"type\":\"card\",\"data\":{\"card_name\":\"Reservation\",\"col\":4}},{\"id\":\"tHmWi-CH7s\",\"type\":\"card\",\"data\":{\"card_name\":\"Dining\",\"col\":4}},{\"id\":\"Ur72Jx5Ewh\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":4}}]",
+ "creation": "2023-02-23 13:00:27.721907",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "both",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Hotel Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reservation",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reservations",
+   "link_count": 0,
+   "link_to": "Reservation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Info",
+   "link_count": 0,
+   "link_to": "Billing Information",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Services",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Room Service",
+   "link_count": 0,
+   "link_to": "Room Service",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dining",
+   "link_count": 0,
+   "link_to": "Dining",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pick Up Service",
+   "link_count": 0,
+   "link_to": "Pick Up Service",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dining",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "BreakFast",
+   "link_count": 0,
+   "link_to": "Breakfast",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Brunch",
+   "link_count": 0,
+   "link_to": "Branch",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lunch",
+   "link_count": 0,
+   "link_to": "Lunch",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dinner",
+   "link_count": 0,
+   "link_to": "Dinner",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Order Now",
+   "link_count": 0,
+   "link_to": "cx Ordering form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Admin Dashboard",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Admin Login",
+   "link_count": 0,
+   "link_to": "System_Admin_Login",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Loginn",
+   "link_count": 0,
+   "link_to": "Entry_form for Employees",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Departments",
+   "link_count": 0,
+   "link_to": "Hotel_Department",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Report",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reservation",
+   "link_count": 0,
+   "link_to": "Reservations",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Orders",
+   "link_count": 0,
+   "link_to": "Orders",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billings",
+   "link_count": 0,
+   "link_to": "Billing",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-03-05 08:55:47.364269",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Hotel Management",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 39.0,
+ "shortcuts": [
+  {
+   "doc_view": "Dashboard",
+   "label": "Billing",
+   "link_to": "Billing Information",
+   "type": "DocType"
+  }
+ ],
+ "title": "Hotel Management"
+}

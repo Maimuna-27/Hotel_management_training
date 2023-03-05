@@ -9,13 +9,14 @@
  "engine": "InnoDB",
  "field_order": [
   "hotel_user_name",
-  "password"
+  "password",
+  "deaprtment"
  ],
  "fields": [
   {
    "fieldname": "hotel_user_name",
    "fieldtype": "Link",
-   "label": "Hotel User Name",
+   "label": "Hotel Employee Name",
    "options": "Hotel_Employees",
    "unique": 1
   },
@@ -24,11 +25,18 @@
    "fieldtype": "Link",
    "label": "Password",
    "options": "Hotel_Employees"
+  },
+  {
+   "fieldname": "deaprtment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Hotel_Department"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-23 13:04:42.825971",
+ "modified": "2023-02-28 15:03:55.374337",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Entry_form for Employees",
