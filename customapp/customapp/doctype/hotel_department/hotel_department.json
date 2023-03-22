@@ -58,12 +58,14 @@
   {
    "fieldname": "old_parent",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Old Parent",
    "options": "Hotel_Department"
   },
   {
    "fieldname": "parent_hotel_department",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Parent Hotel_Department",
    "options": "Hotel_Department"
   }
@@ -71,7 +73,7 @@
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2023-02-23 13:07:41.385645",
+ "modified": "2023-03-22 12:36:47.621212",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel_Department",

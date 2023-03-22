@@ -5,7 +5,7 @@
    "label": "Reservations"
   }
  ],
- "content": "[{\"id\":\"GQfz3_rhPN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Hotel Management</span>\",\"col\":12}},{\"id\":\"IqS5b9AWAh\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Reservations\",\"col\":12}},{\"id\":\"oTvUR-9x6Y\",\"type\":\"card\",\"data\":{\"card_name\":\"Admin Dashboard\",\"col\":4}},{\"id\":\"19GTwRCcbl\",\"type\":\"card\",\"data\":{\"card_name\":\"Services\",\"col\":4}},{\"id\":\"smyrZcK1g2\",\"type\":\"card\",\"data\":{\"card_name\":\"Reservation\",\"col\":4}},{\"id\":\"tHmWi-CH7s\",\"type\":\"card\",\"data\":{\"card_name\":\"Dining\",\"col\":4}},{\"id\":\"Ur72Jx5Ewh\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":4}}]",
+ "content": "[{\"id\":\"GQfz3_rhPN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\">Hotel Management</span>\",\"col\":12}},{\"id\":\"6wYenRPO29\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Reservation List\",\"col\":3}},{\"id\":\"uwml9T8g-1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Billing List\",\"col\":3}},{\"id\":\"bwNACuyw3E\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Order form\",\"col\":3}},{\"id\":\"IqS5b9AWAh\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Reservations\",\"col\":12}},{\"id\":\"oTvUR-9x6Y\",\"type\":\"card\",\"data\":{\"card_name\":\"Admin Dashboard\",\"col\":4}},{\"id\":\"19GTwRCcbl\",\"type\":\"card\",\"data\":{\"card_name\":\"Services\",\"col\":4}},{\"id\":\"smyrZcK1g2\",\"type\":\"card\",\"data\":{\"card_name\":\"Reservation\",\"col\":4}},{\"id\":\"tHmWi-CH7s\",\"type\":\"card\",\"data\":{\"card_name\":\"Dining\",\"col\":4}},{\"id\":\"Ur72Jx5Ewh\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":4}}]",
  "creation": "2023-02-23 13:00:27.721907",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -217,7 +217,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-03-05 08:55:47.364269",
+ "modified": "2023-03-22 11:35:01.773128",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel Management",
@@ -225,13 +225,32 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
  "sequence_id": 39.0,
  "shortcuts": [
   {
-   "doc_view": "Dashboard",
-   "label": "Billing",
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Reservation List",
+   "link_to": "Reservation",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Billing List",
    "link_to": "Billing Information",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Order form",
+   "link_to": "cx Ordering form",
    "type": "DocType"
   }
  ],

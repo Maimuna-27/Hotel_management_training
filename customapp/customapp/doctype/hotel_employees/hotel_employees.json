@@ -15,7 +15,8 @@
   "phone",
   "column_break_kdhib",
   "department_assigned",
-  "shift_timings"
+  "shift_timings",
+  "shift"
  ],
  "fields": [
   {
@@ -48,7 +49,7 @@
   {
    "fieldname": "shift_timings",
    "fieldtype": "Select",
-   "label": "Shift Timings",
+   "label": "Shift Timings (present)",
    "options": "Day\nNight"
   },
   {
@@ -60,11 +61,17 @@
    "fieldname": "user_names",
    "fieldtype": "Data",
    "label": "Hotel User Name"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Table",
+   "label": "Shift Schedule ",
+   "options": "Shift Timings For Employees"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-27 06:20:35.812222",
+ "modified": "2023-03-22 12:51:44.039745",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel_Employees",
@@ -86,5 +93,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

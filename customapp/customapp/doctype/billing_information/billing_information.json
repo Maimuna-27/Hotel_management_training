@@ -17,7 +17,6 @@
   "allocated_room_number",
   "total_price_column",
   "price",
-  "discount",
   "subtotal",
   "amended_from",
   "route"
@@ -82,11 +81,7 @@
    "read_only": 1
   },
   {
-   "fieldname": "discount",
-   "fieldtype": "Data",
-   "label": "Discount"
-  },
-  {
+   "fetch_from": "reservation_id.price_details",
    "fieldname": "subtotal",
    "fieldtype": "Data",
    "label": "Subtotal"
@@ -111,7 +106,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-28 08:23:39.242129",
+ "modified": "2023-03-22 12:19:14.212635",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Billing Information",

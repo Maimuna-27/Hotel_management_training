@@ -9,3 +9,9 @@ frappe.ui.form.on('Billing Information', {
 		}
 	// }
 });
+frappe.ui.form.on('Billing Information', {
+	on_submit: function(frm) {
+	  frappe.msgprint("Have a Great Stay ✨!!");
+	}
+  });
+  
