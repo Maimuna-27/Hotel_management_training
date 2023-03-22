@@ -1,14 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:resrvation_id",
+ "autoname": "naming_series:",
  "creation": "2023-02-23 11:36:05.899609",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "resrvation_id",
+  "naming_series",
   "date_of_reservation",
   "guest_name",
   "room_name",
@@ -25,14 +25,6 @@
   "route"
  ],
  "fields": [
-  {
-   "fieldname": "resrvation_id",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Reservation ID",
-   "reqd": 1,
-   "unique": 1
-  },
   {
    "fieldname": "date_of_reservation",
    "fieldtype": "Date",
@@ -115,17 +107,23 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Route"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Reservation ID",
+   "options": "RES--.###"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-28 08:19:24.497410",
+ "modified": "2023-03-22 10:54:56.176284",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Reservation",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
