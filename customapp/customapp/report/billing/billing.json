@@ -1,5 +1,5 @@
 {
- "add_total_row": 0,
+ "add_total_row": 1,
  "columns": [],
  "creation": "2023-02-27 06:42:57.282875",
  "disable_prepared_report": 0,
@@ -10,7 +10,7 @@
  "idx": 0,
  "is_standard": "Yes",
  "json": "{}",
- "modified": "2023-02-27 06:42:57.282875",
+ "modified": "2023-03-23 08:25:39.670693",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Billing",
@@ -22,6 +22,9 @@
  "roles": [
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
   }
  ]
 }

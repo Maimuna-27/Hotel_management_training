@@ -1,5 +1,5 @@
 {
- "add_total_row": 0,
+ "add_total_row": 1,
  "columns": [],
  "creation": "2023-02-27 05:41:43.677390",
  "disable_prepared_report": 0,
@@ -10,7 +10,7 @@
  "idx": 0,
  "is_standard": "Yes",
  "json": "{}",
- "modified": "2023-02-27 05:42:55.799647",
+ "modified": "2023-03-23 08:24:43.084923",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Orders",

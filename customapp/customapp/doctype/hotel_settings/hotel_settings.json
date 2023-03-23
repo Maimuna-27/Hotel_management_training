@@ -8,11 +8,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "hotel_name",
-  "hotel_tax_id",
   "hotel_owner_name",
+  "hotel_name",
   "phone_number",
-  "email_address"
+  "email_address",
+  "hotel_tax_id"
  ],
  "fields": [
   {
@@ -45,7 +45,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-03-22 12:54:51.216716",
+ "modified": "2023-03-23 08:00:44.438327",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel Settings",

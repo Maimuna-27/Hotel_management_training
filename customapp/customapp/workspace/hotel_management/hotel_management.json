@@ -217,7 +217,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-03-22 11:35:01.773128",
+ "modified": "2023-03-23 07:55:19.239796",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel Management",
@@ -230,7 +230,7 @@
    "role": "Administrator"
   }
  ],
- "sequence_id": 39.0,
+ "sequence_id": 1.0,
  "shortcuts": [
   {
    "color": "Pink",
