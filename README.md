@@ -6,5 +6,5 @@ The purpose of managing a hotel is to successfully establish a constant flow of 
 <<<<<<< HEAD
 
 =======
-sasasa
+
 >>>>>>> 2fc1bd9 (test)
