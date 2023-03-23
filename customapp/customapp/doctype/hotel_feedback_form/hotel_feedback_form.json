@@ -1,0 +1,246 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-03-23 12:29:54.332893",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "guest_feedback_form",
+  "section_break_cssti",
+  "naming_series",
+  "check_in_date",
+  "check_out_date",
+  "section_break_ipzfq",
+  "did_you_visit_our_hotel_before",
+  "yes",
+  "no",
+  "check_in_experiance",
+  "excellent",
+  "good",
+  "poor",
+  "cleanliness",
+  "strongly_agree",
+  "agree",
+  "disagree",
+  "how_was_the_staff_service",
+  "they_were_polite",
+  "they_were_ok",
+  "they_were_rude",
+  "column_break_vjgyd",
+  "how_was_the_resturant_food",
+  "very_tasty_satisfactory",
+  "fair",
+  "need_some_improvement",
+  "please_rate_your_overall_stay",
+  "here",
+  "please_rate_how_likely_will_you_stay_with_us_again",
+  "heres",
+  "how_likely_is_it_that_you_will_recommend_us_to_others",
+  "rating"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "guest_feedback_form",
+   "fieldtype": "Heading",
+   "label": "Guest Feedback Form"
+  },
+  {
+   "fieldname": "check_in_experiance",
+   "fieldtype": "Heading",
+   "label": "How was Your Check in Experience ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "excellent",
+   "fieldtype": "Check",
+   "label": "Excellent"
+  },
+  {
+   "default": "0",
+   "fieldname": "good",
+   "fieldtype": "Check",
+   "label": "Good"
+  },
+  {
+   "default": "0",
+   "fieldname": "poor",
+   "fieldtype": "Check",
+   "label": "Poor"
+  },
+  {
+   "fieldname": "cleanliness",
+   "fieldtype": "Heading",
+   "label": "Did You Find our Hotel's Cleanliness Best?"
+  },
+  {
+   "fieldname": "section_break_cssti",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_in_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Check in Date"
+  },
+  {
+   "fieldname": "check_out_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Check Out Date"
+  },
+  {
+   "fieldname": "did_you_visit_our_hotel_before",
+   "fieldtype": "Heading",
+   "label": "Did you visit our hotel before? "
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "default": "0",
+   "fieldname": "strongly_agree",
+   "fieldtype": "Check",
+   "label": "Strongly Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "agree",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "disagree",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "fieldname": "how_was_the_staff_service",
+   "fieldtype": "Heading",
+   "label": "How was the Staff Service?"
+  },
+  {
+   "default": "0",
+   "fieldname": "they_were_polite",
+   "fieldtype": "Check",
+   "label": "They were Polite"
+  },
+  {
+   "default": "0",
+   "fieldname": "they_were_ok",
+   "fieldtype": "Check",
+   "label": "They were OK"
+  },
+  {
+   "default": "0",
+   "fieldname": "they_were_rude",
+   "fieldtype": "Check",
+   "label": "They were Rude"
+  },
+  {
+   "fieldname": "column_break_vjgyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "how_was_the_resturant_food",
+   "fieldtype": "Heading",
+   "label": "How was The Resturant Food?"
+  },
+  {
+   "default": "0",
+   "fieldname": "very_tasty_satisfactory",
+   "fieldtype": "Check",
+   "label": "Very Tasty, Satisfactory"
+  },
+  {
+   "default": "0",
+   "fieldname": "fair",
+   "fieldtype": "Check",
+   "label": "Fair"
+  },
+  {
+   "default": "0",
+   "fieldname": "need_some_improvement",
+   "fieldtype": "Check",
+   "label": "Need Some Improvement"
+  },
+  {
+   "fieldname": "section_break_ipzfq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "please_rate_your_overall_stay",
+   "fieldtype": "Heading",
+   "label": "Please Rate Your OverAll Stay"
+  },
+  {
+   "bold": 1,
+   "fieldname": "here",
+   "fieldtype": "Rating",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "please_rate_how_likely_will_you_stay_with_us_again",
+   "fieldtype": "Heading",
+   "label": "Please rate how likely will you stay with us again "
+  },
+  {
+   "fieldname": "heres",
+   "fieldtype": "Rating"
+  },
+  {
+   "fieldname": "how_likely_is_it_that_you_will_recommend_us_to_others",
+   "fieldtype": "Heading",
+   "label": "How likely is it that you will recommend us to others? "
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming series",
+   "options": "FORM--.###"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-23 13:31:50.978713",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Hotel_Feedback_Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
