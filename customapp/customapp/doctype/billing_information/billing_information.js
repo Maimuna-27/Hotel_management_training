@@ -10,7 +10,7 @@ frappe.ui.form.on('Billing Information', {
 	// }
 });
 frappe.ui.form.on('Billing Information', {
-	after_save: function(frm) {
+	on_submit: function(frm) {
 	  frappe.msgprint("Have a Great Stay ✨!!");
 	}
   });
