@@ -8,6 +8,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "first_name",
+  "last_name",
   "employee_full_name",
   "user_names",
   "passwordss",
@@ -67,11 +69,21 @@
    "fieldtype": "Table",
    "label": "Shift Schedule ",
    "options": "Shift Timings For Employees"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name "
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-22 12:51:44.039745",
+ "modified": "2023-03-24 14:36:08.677301",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel_Employees",

@@ -45,7 +45,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-03-23 08:00:44.438327",
+ "modified": "2023-03-26 11:59:48.364023",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel Settings",
@@ -59,6 +59,16 @@
    "print": 1,
    "read": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Administrator",
    "share": 1,
    "write": 1
   }

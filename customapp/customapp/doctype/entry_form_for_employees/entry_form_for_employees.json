@@ -8,9 +8,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "login_form",
   "hotel_user_name",
   "password",
-  "deaprtment"
+  "department",
+  "logged_in"
  ],
  "fields": [
   {
@@ -22,21 +24,33 @@
   },
   {
    "fieldname": "password",
-   "fieldtype": "Link",
-   "label": "Password",
-   "options": "Hotel_Employees"
+   "fieldtype": "Data",
+   "label": "Password"
   },
   {
-   "fieldname": "deaprtment",
-   "fieldtype": "Link",
+   "fetch_from": "hotel_user_name.department_assigned",
+   "fieldname": "department",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Department",
-   "options": "Hotel_Department"
+   "read_only": 1
+  },
+  {
+   "fieldname": "logged_in",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Log in / Log out Time"
+  },
+  {
+   "bold": 1,
+   "fieldname": "login_form",
+   "fieldtype": "Heading",
+   "label": "LOGIN FORM"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-28 15:03:55.374337",
+ "modified": "2023-03-26 12:15:35.748656",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Entry_form for Employees",
@@ -52,6 +66,30 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Hotel Employee",
    "share": 1,
    "write": 1
   }

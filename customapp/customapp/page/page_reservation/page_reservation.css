@@ -1,0 +1,46 @@
+container {
+    position: relative;
+
+}
+
+.button-wrapper {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+}
+
+button {
+    text-align: center;
+    background-color: rgb(144, 228, 228);
+    border-color: brown;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.col-1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(43, 16, 138);
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.table {
+    border: 2px solid #333;
+  }
+  /* .th, td {
+    border: 1px solid #333;
+    padding: 8px;
+  } */
+ h4{
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+ }
+ .room{
+    
+    font-weight: bold;
+ }

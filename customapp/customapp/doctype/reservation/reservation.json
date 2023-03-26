@@ -86,7 +86,7 @@
   {
    "fetch_from": "room_name.price",
    "fieldname": "price_details",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Price Details",
    "read_only": 1
   },
@@ -121,7 +121,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-22 12:23:32.145821",
+ "modified": "2023-03-26 11:09:41.780439",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Reservation",
@@ -137,6 +137,30 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Hotel Manager",
    "share": 1,
    "write": 1
   }

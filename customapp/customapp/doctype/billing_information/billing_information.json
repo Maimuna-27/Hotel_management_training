@@ -75,7 +75,7 @@
   {
    "fetch_from": "reservation_id.price_details",
    "fieldname": "price",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Price",
    "read_only": 1
@@ -106,7 +106,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-22 12:19:14.212635",
+ "modified": "2023-03-26 11:59:17.098856",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Billing Information",
@@ -134,6 +134,30 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Hotel Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Hotel Employee",
    "share": 1,
    "write": 1
   }

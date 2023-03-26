@@ -1,26 +1,102 @@
-<div class="container">
-    <div class="row">&nbsp;</div>
-    <div class="row">
-        <div class="col card">
-            Date Of Reservation: {{ data.resrvation_id }}
-        </div>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-        <!-- <div class="col card">
-            Guest Name : {{ data.guest_name }}
-        </div>
-        <div class="col card">
-            Room Name : {{ data.Room_name }}
-        </div>
+    <div class="container">
+        <h4> Reserved Rooms</h4>
+    </div>
+    <div class="button-wrapper">
+
+        <a href="http://127.0.0.1:8000/app/billing-information/new-billing-information-1">
+            <button class="new-billing">New Billing Details</button>
+        </a>
+        <a href="http://127.0.0.1:8000/app/reservation/new-reservation-1">
+            <button type="button">New Reservation</button>
+        </a>
 
     </div>
+    <table class="table table-bordered table-striped  ">
+        <thead class="col-1">
+            <tr>
+                <th>Room Number</th>
+                <th>Room Name</th>
+                <th>Reservation ID</th>
+                <th>Billing Status</th>
+                <th>Room Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="room">101</td>
+                <td class="room">Classic Bedroom</td>
+                <td>RES--001</td>
+                <td>Paid <i class="fas fa-circle text-success"></i></td>
+                <td>Reserved</td>
+            </tr>
+            <tr>
+                <td class="room">102</td>
+                <td class="room">Deluxe Double Bedroom</td>
+                <td>RES--002</td>
+                <td>Paid <i class="fas fa-circle text-success"></i></td>
+                <td>Reserved</td>
+            </tr>
+            <tr>
+                <td class="room">103</td>
+                <td class="room">Deluxe Bedroom</td>
+                <td>RES--003</td>
+                <td>Pending <i class="fas fa-circle text-warning"></i></td>
+                <td>Reserved but not Billed </td>
+            </tr>
+            <tr>
+                <td class="room">104</td>
+                <td class="room">Single Bedroom</td>
+                <td>RES--004</td>
+                <td>Paid <i class="fas fa-circle text-success"></i></td>
+                <td>Reserved</td>
+            </tr>
+            <tr>
+                <td class="room">105</td>
+                <td class="room">Family Suite</td>
+                <td>RES--005</td>
+                <td>Paid <i class="fas fa-circle text-success"></i></td>
+                <td>Reserved </td>
+            </tr>
+            <tr>
+                <td class="room">106</td>
+                <td class="room">Single Bedroom</td>
+                <td>RES--006</td>
+                <td>Paid <i class="fas fa-circle text-success"></i></td>
+                <td>Reserved </td>
+            </tr>
+            <tr>
+                <td class="room">107</td>
+                <td class="room">Presidential Suite</td>
+                <td>RES--007</td>
+                <td>Paid<i class="fas fa-circle text-success"></i></td>
+                <td>Reserved </td>
+            </tr>
+            <tr>
+                <td class="room">108</td>
+                <td class="room">Luxury Suite</td>
+                <td>RES--008</td>
+                <td>Pending <i class="fas fa-circle text-warning"></i></td>
+                <td>Reserved but not Billed </td>
+            </tr>
+            <tr>
+                <td class="room">109</td>
+                <td class="room">Classic Bedroom</td>
+                <td>RES--009</td>
+                <td>Paid <i class="fas fa-circle text-success"></i></td>
+                <td>Reserved</td>
+            </tr>
+            <tr>
+                <td class="room">110</td>
+                <td class="room">Single Bedroom</td>
+                <td>RES--010</td>
+                <td>Pending <i class="fas fa-circle text-warning"></i></td>
+                <td>Reserved but not Billed </td>
+            </tr>
 
-    <table class="table">
-        <tr>
-            <th>Membership Plan</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Includes Trainer</th>
-            <th>Days Left</th>
-            <th>Small Description</th>
+        </tbody>
+    </table>
 
-        </tr> -->
+</body>
