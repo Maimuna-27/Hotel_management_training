@@ -5,7 +5,7 @@
    "label": "Reservations"
   }
  ],
- "content": "[{\"id\":\"GQfz3_rhPN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\">Hotel Management</span>\",\"col\":12}},{\"id\":\"6wYenRPO29\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Reservation List\",\"col\":3}},{\"id\":\"uwml9T8g-1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Billing List\",\"col\":3}},{\"id\":\"bwNACuyw3E\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Order form\",\"col\":3}},{\"id\":\"IqS5b9AWAh\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Reservations\",\"col\":12}},{\"id\":\"oTvUR-9x6Y\",\"type\":\"card\",\"data\":{\"card_name\":\"Admin Dashboard\",\"col\":4}},{\"id\":\"19GTwRCcbl\",\"type\":\"card\",\"data\":{\"card_name\":\"Services\",\"col\":4}},{\"id\":\"smyrZcK1g2\",\"type\":\"card\",\"data\":{\"card_name\":\"Reservation\",\"col\":4}},{\"id\":\"tHmWi-CH7s\",\"type\":\"card\",\"data\":{\"card_name\":\"Dining\",\"col\":4}},{\"id\":\"Ur72Jx5Ewh\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":4}}]",
+ "content": "[{\"id\":\"GQfz3_rhPN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\">Hotel Management</span>\",\"col\":12}},{\"id\":\"6wYenRPO29\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Reservation List\",\"col\":3}},{\"id\":\"uwml9T8g-1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Billing List\",\"col\":3}},{\"id\":\"bwNACuyw3E\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Order form\",\"col\":3}},{\"id\":\"IqS5b9AWAh\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Reservations\",\"col\":12}},{\"id\":\"oTvUR-9x6Y\",\"type\":\"card\",\"data\":{\"card_name\":\"Admin Dashboard\",\"col\":4}},{\"id\":\"19GTwRCcbl\",\"type\":\"card\",\"data\":{\"card_name\":\"Services\",\"col\":4}},{\"id\":\"smyrZcK1g2\",\"type\":\"card\",\"data\":{\"card_name\":\"Reservation\",\"col\":4}},{\"id\":\"tHmWi-CH7s\",\"type\":\"card\",\"data\":{\"card_name\":\"Dining\",\"col\":4}},{\"id\":\"Ur72Jx5Ewh\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":4}},{\"id\":\"sirEo7nGNS\",\"type\":\"card\",\"data\":{\"card_name\":\"Page\",\"col\":4}}]",
  "creation": "2023-02-23 13:00:27.721907",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -215,9 +215,27 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Page",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reserved Rooms",
+   "link_count": 0,
+   "link_to": "page-reservation",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-03-23 09:22:05.256142",
+ "modified": "2023-03-26 13:08:21.626060",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel Management",

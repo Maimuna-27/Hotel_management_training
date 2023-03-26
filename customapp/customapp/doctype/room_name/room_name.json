@@ -10,6 +10,7 @@
  "field_order": [
   "room_name",
   "price",
+  "available",
   "description"
  ],
  "fields": [
@@ -29,11 +30,17 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Price"
+  },
+  {
+   "fieldname": "available",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Available"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-26 11:33:52.348393",
+ "modified": "2023-03-26 13:06:30.946543",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Room Name",
