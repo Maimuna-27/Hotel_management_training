@@ -23,6 +23,7 @@
   {
    "fieldname": "pricing",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Pricings"
   },
   {
@@ -38,7 +39,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-26 12:03:02.450769",
+ "modified": "2023-03-27 10:00:33.587905",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Lunch",
