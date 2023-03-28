@@ -59,7 +59,8 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Room Number",
-   "options": "Room Number"
+   "options": "Room Number",
+   "reqd": 1
   },
   {
    "fieldname": "delivery_column",
@@ -220,7 +221,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-26 12:01:09.025317",
+ "modified": "2023-03-28 08:25:29.905762",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "cx Ordering form",

@@ -12,7 +12,7 @@
  "button_label": "Submit",
  "creation": "2023-03-23 13:34:03.632055",
  "currency": "SAR",
- "custom_css": "",
+ "custom_css": "body{\n    font-weight : bold;\n    \n}\nlabel{\n    font-size : 15px;\n    margin-top: 1 rem;\n}\n",
  "doc_type": "Hotel_Feedback_Form",
  "docstatus": 0,
  "doctype": "Web Form",
@@ -22,7 +22,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2023-03-26 12:53:34.606899",
+ "modified": "2023-03-28 08:54:27.943512",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "guest-feedback-form",
@@ -42,7 +42,7 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "hidden": 0,
-   "label": "naming series",
+   "label": "Form no.",
    "max_length": 0,
    "max_value": 0,
    "options": "FORM--.###",
@@ -72,7 +72,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -84,7 +84,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {

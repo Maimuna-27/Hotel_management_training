@@ -29,13 +29,15 @@
    "fieldname": "date_of_reservation",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Date of Reservation"
+   "label": "Date of Reservation",
+   "reqd": 1
   },
   {
    "fieldname": "guest_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Guest Name"
+   "label": "Guest Name",
+   "reqd": 1
   },
   {
    "fieldname": "room_name",
@@ -59,13 +61,15 @@
    "fieldname": "adults",
    "fieldtype": "Select",
    "label": "Adults",
-   "options": "0\n1\n2\n3\n4\n5"
+   "options": "0\n1\n2\n3\n4\n5",
+   "reqd": 1
   },
   {
    "fieldname": "children",
    "fieldtype": "Select",
    "label": "Children",
-   "options": "0\n1\n2\n3\n4\n5"
+   "options": "0\n1\n2\n3\n4\n5",
+   "reqd": 1
   },
   {
    "fieldname": "ac_non_ac",
@@ -121,7 +125,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-26 13:03:01.947490",
+ "modified": "2023-03-28 07:57:18.760258",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Reservation",

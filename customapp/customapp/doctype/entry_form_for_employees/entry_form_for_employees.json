@@ -20,12 +20,14 @@
    "fieldtype": "Link",
    "label": "Hotel Employee Name",
    "options": "Hotel_Employees",
+   "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "password",
    "fieldtype": "Data",
-   "label": "Password"
+   "label": "Password",
+   "reqd": 1
   },
   {
    "fetch_from": "hotel_user_name.department_assigned",
@@ -50,7 +52,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-26 12:15:35.748656",
+ "modified": "2023-03-28 07:59:42.978135",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Entry_form for Employees",

@@ -35,27 +35,32 @@
    "fieldtype": "Data",
    "label": "Guest Name",
    "read_only": 1,
+   "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "identification",
    "fieldtype": "Data",
-   "label": "Identification"
+   "label": "Identification",
+   "reqd": 1
   },
   {
    "fieldname": "phone_number",
    "fieldtype": "Phone",
-   "label": "Phone Number"
+   "label": "Phone Number",
+   "reqd": 1
   },
   {
    "fieldname": "full_adfress",
    "fieldtype": "Small Text",
-   "label": "Full Address"
+   "label": "Full Address",
+   "reqd": 1
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fetch_from": "reservation_id.room_number",
@@ -106,7 +111,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-26 11:59:17.098856",
+ "modified": "2023-03-28 08:50:04.674173",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Billing Information",

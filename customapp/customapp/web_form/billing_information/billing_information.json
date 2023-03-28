@@ -11,15 +11,17 @@
  "apply_document_permissions": 0,
  "button_label": "Submit",
  "creation": "2023-02-28 07:48:27.798265",
+ "custom_css": "body{\n    font-weight : bold;\n    \n}\nlabel{\n    font-size : 15px;\n    margin-top: 1 rem;\n}\nh1{\n    margin-left : 10rem;\n}",
  "doc_type": "Billing Information",
  "docstatus": 0,
  "doctype": "Web Form",
  "idx": 0,
+ "introduction_text": "<div class=\"ql-editor read-mode\"><p>Please fill all the Details \u26a0\ufe0f</p></div>",
  "is_standard": 1,
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2023-03-22 11:50:46.098819",
+ "modified": "2023-03-28 08:49:30.791345",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "billing-information",
@@ -56,8 +58,8 @@
    "max_length": 0,
    "max_value": 0,
    "options": "",
-   "read_only": 1,
-   "reqd": 0,
+   "read_only": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -69,7 +71,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -81,7 +83,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -93,7 +95,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -105,20 +107,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
-   "show_in_filter": 0
-  },
-  {
-   "allow_read_on_all_link_options": 0,
-   "fieldname": "allocated_room_number",
-   "fieldtype": "Link",
-   "hidden": 0,
-   "label": "Allocated Room Number",
-   "max_length": 0,
-   "max_value": 0,
-   "options": "Room Number",
-   "read_only": 1,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -126,7 +115,7 @@
    "fieldname": "",
    "fieldtype": "Column Break",
    "hidden": 0,
-   "label": "Pricing",
+   "label": "PRICING",
    "max_length": 0,
    "max_value": 0,
    "options": "",
