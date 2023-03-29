@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2023-03-27 07:46:14.365789",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-03-29 09:16:07.399153",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "room-details",
+ "owner": "Administrator",
+ "page_name": "room-details",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Room Details"
+}

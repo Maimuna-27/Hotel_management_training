@@ -1,0 +1,27 @@
+
+<div class="details">
+    <h4>Lets look at the Details : </h4>
+<div class="roomname-container">
+    <table class="table ">
+        <thead class="header">
+            <tr>
+                <th>Room Name</th>
+                <th>Price</th>
+                <th>Available</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <!-- {% index = 0 %} -->
+        {% for room_name in roomnames %}
+        <!-- {% index = index + 1 %} -->
+        <tr>
+            <!-- <td> {{ index }} </td> -->
+            <td> {{ room_name.room_name }} </td>
+            <td> {{ room_name.price }} </td>
+            <td> {{ room_name.available }} </td>
+            <td> {{ room_name.description }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</div>
