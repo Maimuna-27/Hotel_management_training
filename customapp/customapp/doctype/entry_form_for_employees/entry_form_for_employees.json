@@ -20,6 +20,7 @@
    "fieldtype": "Link",
    "label": "Hotel Employee Name",
    "options": "Hotel_Employees",
+   "remember_last_selected_value": 1,
    "reqd": 1,
    "unique": 1
   },
@@ -52,7 +53,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-28 07:59:42.978135",
+ "modified": "2023-04-02 08:37:07.310194",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Entry_form for Employees",

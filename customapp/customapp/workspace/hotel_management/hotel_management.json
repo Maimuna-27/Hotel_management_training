@@ -220,7 +220,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Page",
-   "link_count": 1,
+   "link_count": 2,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -233,9 +233,19 @@
    "link_type": "Page",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Room Data",
+   "link_count": 0,
+   "link_to": "room-details",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-03-26 13:08:21.626060",
+ "modified": "2023-04-02 08:20:54.680016",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel Management",

@@ -221,7 +221,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-28 08:25:29.905762",
+ "modified": "2023-04-02 09:16:36.188802",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "cx Ordering form",
@@ -250,6 +250,19 @@
    "read": 1,
    "report": 1,
    "role": "Hotel Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Hotel Chef",
+   "select": 1,
    "share": 1,
    "write": 1
   }
