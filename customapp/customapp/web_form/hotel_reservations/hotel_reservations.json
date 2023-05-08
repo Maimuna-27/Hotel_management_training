@@ -20,7 +20,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2023-04-02 09:03:52.636450",
+ "modified": "2023-05-03 09:46:54.803316",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "hotel-reservations",
@@ -81,19 +81,6 @@
    "max_length": 0,
    "max_value": 0,
    "options": "Room Name",
-   "read_only": 0,
-   "reqd": 0,
-   "show_in_filter": 0
-  },
-  {
-   "allow_read_on_all_link_options": 0,
-   "fieldname": "room_number",
-   "fieldtype": "Link",
-   "hidden": 0,
-   "label": "Room Number",
-   "max_length": 0,
-   "max_value": 0,
-   "options": "Room Number",
    "read_only": 0,
    "reqd": 0,
    "show_in_filter": 0

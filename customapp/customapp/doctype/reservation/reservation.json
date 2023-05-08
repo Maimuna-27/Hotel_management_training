@@ -12,7 +12,6 @@
   "date_of_reservation",
   "guest_name",
   "room_name",
-  "room_number",
   "price_details",
   "availabililty",
   "column_break_netub",
@@ -22,7 +21,9 @@
   "children",
   "ac_non_ac",
   "amended_from",
-  "route"
+  "route",
+  "pick_up_required",
+  "pick_up_service"
  ],
  "fields": [
   {
@@ -42,14 +43,8 @@
   {
    "fieldname": "room_name",
    "fieldtype": "Link",
-   "label": "Room Name",
+   "label": "Room Type",
    "options": "Room Name"
-  },
-  {
-   "fieldname": "room_number",
-   "fieldtype": "Link",
-   "label": "Room Number",
-   "options": "Room Number"
   },
   {
    "default": "0",
@@ -121,13 +116,25 @@
    "fieldtype": "Select",
    "label": "Reservation ID",
    "options": "RES--.###"
+  },
+  {
+   "fieldname": "pick_up_required",
+   "fieldtype": "Select",
+   "label": "Pick Up Required",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "pick_up_service",
+   "fieldtype": "Link",
+   "label": "Pick Up Service",
+   "options": "Pick Up Service"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-04-02 09:17:13.654743",
+ "modified": "2023-05-03 09:44:58.047902",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Reservation",
