@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-14 12:07:59.795800",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_id",
+  "invoice_date",
+  "room_number",
+  "check_in",
+  "check_out",
+  "guest_name",
+  "identification_number",
+  "phone_number",
+  "column_break_huthx",
+  "price_details",
+  "total",
+  "signature",
+  "return_room_key",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "invoice_id",
+   "fieldtype": "Data",
+   "label": "Invoice ID"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Data",
+   "label": "Room Number"
+  },
+  {
+   "fieldname": "check_in",
+   "fieldtype": "Data",
+   "label": "Check in "
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Data",
+   "label": "Check out"
+  },
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "label": "Guest Name"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Data",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "return_room_key",
+   "fieldtype": "Data",
+   "label": "Return Room key"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Final Invoice",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "price_details",
+   "fieldtype": "Table",
+   "label": "Price details",
+   "options": "Price Details"
+  },
+  {
+   "fieldname": "column_break_huthx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Data",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "identification_number",
+   "fieldtype": "Data",
+   "label": "Identification Number"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-05-15 10:57:46.907800",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Final Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

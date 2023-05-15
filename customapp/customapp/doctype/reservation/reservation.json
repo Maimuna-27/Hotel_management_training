@@ -11,12 +11,12 @@
   "naming_series",
   "date_of_reservation",
   "guest_name",
-  "room_name",
+  "rooms_name",
   "price_details",
   "availabililty",
   "column_break_netub",
-  "check_in",
-  "check_out",
+  "checkin",
+  "checkout",
   "adults",
   "children",
   "ac_non_ac",
@@ -41,14 +41,8 @@
    "reqd": 1
   },
   {
-   "fieldname": "room_name",
-   "fieldtype": "Link",
-   "label": "Room Type",
-   "options": "Room Name"
-  },
-  {
    "default": "0",
-   "fetch_from": "room_name.available",
+   "fetch_from": "rooms_name.available",
    "fieldname": "availabililty",
    "fieldtype": "Data",
    "label": "Availabililty",
@@ -85,25 +79,15 @@
    "read_only": 1
   },
   {
-   "fetch_from": "room_name.price",
+   "fetch_from": "rooms_name.price",
    "fieldname": "price_details",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "label": "Price Details",
    "read_only": 1
   },
   {
    "fieldname": "column_break_netub",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "check_in",
-   "fieldtype": "Duration",
-   "label": "Check In"
-  },
-  {
-   "fieldname": "check_out",
-   "fieldtype": "Duration",
-   "label": "Check Out"
   },
   {
    "fieldname": "route",
@@ -128,13 +112,30 @@
    "fieldtype": "Link",
    "label": "Pick Up Service",
    "options": "Pick Up Service"
+  },
+  {
+   "fieldname": "checkin",
+   "fieldtype": "Date",
+   "label": "Check In"
+  },
+  {
+   "fieldname": "checkout",
+   "fieldtype": "Date",
+   "label": "Check out"
+  },
+  {
+   "fetch_from": "amended_from.rooms_name",
+   "fieldname": "rooms_name",
+   "fieldtype": "Link",
+   "label": "Room Name",
+   "options": "Room Name"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-05-03 09:44:58.047902",
+ "modified": "2023-05-15 09:09:52.747995",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Reservation",

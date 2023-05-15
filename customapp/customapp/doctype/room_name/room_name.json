@@ -27,7 +27,7 @@
   },
   {
    "fieldname": "price",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Price"
   },
@@ -40,7 +40,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-26 13:06:30.946543",
+ "modified": "2023-05-15 09:10:22.429915",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Room Name",

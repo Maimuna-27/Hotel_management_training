@@ -9,14 +9,24 @@
  "engine": "InnoDB",
  "field_order": [
   "reservation_id",
+  "invoice_date",
+  "invoice_due_date",
+  "checkin",
+  "checkout",
   "guest_name",
   "identification",
   "phone_number",
   "full_adfress",
   "email",
+  "column_break_xa01c",
   "allocated_room_number",
+  "room_type",
+  "acnon_ac",
   "total_price_column",
   "price",
+  "ac_prices",
+  "subtotal_without_tax",
+  "tax",
   "subtotal",
   "amended_from",
   "route"
@@ -41,32 +51,29 @@
   {
    "fieldname": "identification",
    "fieldtype": "Data",
-   "label": "Identification",
-   "reqd": 1
+   "label": "Identification"
   },
   {
    "fieldname": "phone_number",
    "fieldtype": "Phone",
-   "label": "Phone Number",
-   "reqd": 1
+   "label": "Phone Number"
   },
   {
    "fieldname": "full_adfress",
    "fieldtype": "Small Text",
-   "label": "Full Address",
-   "reqd": 1
+   "label": "Full Address"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email",
-   "reqd": 1
+   "label": "Email"
   },
   {
    "fieldname": "allocated_room_number",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Allocated Room Number",
+   "options": "Room Number",
    "search_index": 1
   },
   {
@@ -77,15 +84,13 @@
   {
    "fetch_from": "reservation_id.price_details",
    "fieldname": "price",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "Price",
-   "read_only": 1
+   "label": "Price"
   },
   {
-   "fetch_from": "reservation_id.price_details",
    "fieldname": "subtotal",
-   "fieldtype": "Data",
+   "fieldtype": "Currency",
    "label": "Subtotal"
   },
   {
@@ -102,13 +107,73 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "route"
+  },
+  {
+   "fieldname": "acnon_ac",
+   "fieldtype": "Select",
+   "label": "Ac/Non Ac",
+   "options": "Ac\nNon Ac"
+  },
+  {
+   "fieldname": "column_break_xa01c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "reservation_id.checkin",
+   "fieldname": "checkin",
+   "fieldtype": "Date",
+   "label": "Check in",
+   "options": "Reservation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_due_date",
+   "fieldtype": "Date",
+   "label": "Invoice Due Date"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fetch_from": "reservation_id.checkout",
+   "fieldname": "checkout",
+   "fieldtype": "Date",
+   "label": "Checkout",
+   "options": "Reservaton",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reservation_id.rooms_name",
+   "fieldname": "room_type",
+   "fieldtype": "Data",
+   "label": "Room Type",
+   "options": "Reservation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tax",
+   "fieldtype": "Currency",
+   "label": "Taxes"
+  },
+  {
+   "fieldname": "ac_prices",
+   "fieldtype": "Select",
+   "label": "Ac Price",
+   "options": "250\n0"
+  },
+  {
+   "fieldname": "subtotal_without_tax",
+   "fieldtype": "Currency",
+   "label": "Subtotal without Tax"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-05-07 13:30:33.901463",
+ "modified": "2023-05-15 10:06:41.346690",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Billing Information",
@@ -165,5 +230,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
