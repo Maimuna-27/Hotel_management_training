@@ -15,25 +15,25 @@
   "napkins",
   "room_service",
   "breakfast",
-  "meals",
-  "prices",
+  "breakfasts",
   "brunch_tab",
-  "brunch_meals",
-  "pricing",
+  "brunch",
   "lunch_tab",
-  "lunch_meal",
-  "pricings",
-  "side_dishes",
+  "lunch",
   "dinner_tab",
-  "dinner_meal",
-  "dessert",
-  "price",
+  "dinner",
   "delivery_column",
   "do_you_want_to_pick_your_order",
   "yes",
   "noi_would_like_it_deliver_to_my_room",
   "missed_something__please_add_it_in_here",
-  "subtotal",
+  "section_break_uncbv",
+  "breakfasts_total",
+  "brunch_total",
+  "lunch_total",
+  "dinner_total",
+  "tax",
+  "subtotals",
   "proceed_with_payment",
   "amended_from",
   "route"
@@ -94,12 +94,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "meals",
-   "fieldtype": "Link",
-   "label": "BreakFast Meals",
-   "options": "Breakfast"
-  },
-  {
    "default": "0",
    "fieldname": "water_bottle",
    "fieldtype": "Check",
@@ -116,29 +110,10 @@
    "label": "Brunch "
   },
   {
-   "fieldname": "brunch_meals",
-   "fieldtype": "Link",
-   "label": "Brunch Meals",
-   "options": "Brunch"
-  },
-  {
    "default": "0",
    "fieldname": "napkins",
    "fieldtype": "Check",
    "label": "Napkins"
-  },
-  {
-   "fetch_from": "dinner_meal.dessert",
-   "fieldname": "dessert",
-   "fieldtype": "Data",
-   "label": "Dessert",
-   "options": "Dinner"
-  },
-  {
-   "fetch_from": "meals.pricing",
-   "fieldname": "prices",
-   "fieldtype": "Data",
-   "label": "Prices"
   },
   {
    "fieldname": "lunch_tab",
@@ -149,49 +124,6 @@
    "fieldname": "dinner_tab",
    "fieldtype": "Tab Break",
    "label": "Dinner"
-  },
-  {
-   "fetch_from": "brunch_meals.pricing",
-   "fieldname": "pricing",
-   "fieldtype": "Data",
-   "label": "Pricing"
-  },
-  {
-   "fieldname": "lunch_meal",
-   "fieldtype": "Link",
-   "label": "Lunch Meal",
-   "options": "Lunch"
-  },
-  {
-   "fetch_from": "lunch_meal.pricing",
-   "fieldname": "pricings",
-   "fieldtype": "Data",
-   "label": "Pricings "
-  },
-  {
-   "fetch_from": "lunch_meal.side_dishes",
-   "fieldname": "side_dishes",
-   "fieldtype": "Data",
-   "label": "side Dishes",
-   "options": "Lunch"
-  },
-  {
-   "fieldname": "dinner_meal",
-   "fieldtype": "Link",
-   "label": "Dinner Meal",
-   "options": "Dinner"
-  },
-  {
-   "fetch_from": "dinner_meal.pricing",
-   "fieldname": "price",
-   "fieldtype": "Data",
-   "label": "Price"
-  },
-  {
-   "fetch_from": "brunch_meals.pricing",
-   "fieldname": "subtotal",
-   "fieldtype": "Data",
-   "label": "Subtotal"
   },
   {
    "bold": 1,
@@ -216,12 +148,75 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Route"
+  },
+  {
+   "fieldname": "brunch",
+   "fieldtype": "Table",
+   "label": "Brunch",
+   "options": "Brunch Child Table"
+  },
+  {
+   "fieldname": "breakfasts",
+   "fieldtype": "Table",
+   "label": "Breakfast",
+   "options": "Breakfast Child Table"
+  },
+  {
+   "fieldname": "lunch",
+   "fieldtype": "Table",
+   "label": "Lunch",
+   "options": "Lunch Child Table"
+  },
+  {
+   "fieldname": "dinner",
+   "fieldtype": "Table",
+   "label": "Dinner",
+   "options": "Dinner Child Table"
+  },
+  {
+   "fieldname": "brunch_total",
+   "fieldtype": "Currency",
+   "label": "Brunch Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lunch_total",
+   "fieldtype": "Currency",
+   "label": "Lunch Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dinner_total",
+   "fieldtype": "Currency",
+   "label": "Dinner Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subtotals",
+   "fieldtype": "Currency",
+   "label": "Subtotal"
+  },
+  {
+   "fieldname": "tax",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "fieldname": "section_break_uncbv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "brunch_meals.pricing",
+   "fieldname": "breakfasts_total",
+   "fieldtype": "Currency",
+   "label": "Breakfast Total",
+   "read_only": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-02 09:16:36.188802",
+ "modified": "2023-05-23 09:10:33.268230",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "cx Ordering form",

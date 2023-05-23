@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-22 09:45:24.454570",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lunch_dish",
+  "prices",
+  "side_dishes"
+ ],
+ "fields": [
+  {
+   "fieldname": "lunch_dish",
+   "fieldtype": "Link",
+   "label": "Lunch Dish",
+   "options": "Lunch"
+  },
+  {
+   "fetch_from": "lunch_dish.pricing",
+   "fieldname": "prices",
+   "fieldtype": "Currency",
+   "label": "Prices",
+   "options": "Lunch"
+  },
+  {
+   "fetch_from": "lunch_dish.side_dishes",
+   "fieldname": "side_dishes",
+   "fieldtype": "Data",
+   "label": "Side Dishes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-22 09:49:16.539784",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Lunch Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

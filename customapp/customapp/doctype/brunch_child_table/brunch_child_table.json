@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-22 09:40:15.753354",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brunch_dish",
+  "prices"
+ ],
+ "fields": [
+  {
+   "fieldname": "brunch_dish",
+   "fieldtype": "Link",
+   "label": "Brunch Dish",
+   "options": "Brunch"
+  },
+  {
+   "fetch_from": "brunch_dish.pricing",
+   "fieldname": "prices",
+   "fieldtype": "Currency",
+   "label": "Prices",
+   "options": "Brunch"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-22 09:40:47.232305",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Brunch Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

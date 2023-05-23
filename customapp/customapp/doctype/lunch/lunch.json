@@ -22,7 +22,7 @@
   },
   {
    "fieldname": "pricing",
-   "fieldtype": "Data",
+   "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Pricings"
   },
@@ -39,7 +39,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-27 10:00:33.587905",
+ "modified": "2023-05-22 09:12:01.547102",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Lunch",

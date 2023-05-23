@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-22 09:53:01.261897",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dinner_dish",
+  "dessert",
+  "prices"
+ ],
+ "fields": [
+  {
+   "fieldname": "dinner_dish",
+   "fieldtype": "Link",
+   "label": "Dinner Dish",
+   "options": "Dinner"
+  },
+  {
+   "fetch_from": "dinner_dish.pricing",
+   "fieldname": "prices",
+   "fieldtype": "Currency",
+   "label": "Prices",
+   "options": "Dinner"
+  },
+  {
+   "fetch_from": "dinner_dish.dessert",
+   "fieldname": "dessert",
+   "fieldtype": "Data",
+   "label": "Dessert"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-22 09:57:01.078799",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Dinner Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

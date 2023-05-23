@@ -1,61 +1,76 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2023-05-14 12:07:59.795800",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "invoice_id",
+  "naming_series",
+  "billing_id",
   "invoice_date",
   "room_number",
   "check_in",
   "check_out",
+  "column_break_5plql",
   "guest_name",
   "identification_number",
   "phone_number",
   "column_break_huthx",
-  "price_details",
+  "payment_type",
+  "room_details",
+  "room_charge",
+  "ac_charges",
+  "vat_taxes",
+  "service_charge",
+  "car_services",
   "total",
+  "advance_payment",
+  "amount_due",
   "signature",
   "return_room_key",
   "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "invoice_id",
-   "fieldtype": "Data",
-   "label": "Invoice ID"
-  },
-  {
+   "fetch_from": "guest_name.allocated_room_number",
    "fieldname": "room_number",
    "fieldtype": "Data",
    "label": "Room Number"
   },
   {
+   "fetch_from": "guest_name.checkin",
    "fieldname": "check_in",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Check in "
   },
   {
+   "fetch_from": "guest_name.checkout",
    "fieldname": "check_out",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Check out"
   },
   {
+   "bold": 1,
+   "fetch_from": "billing_id.guest_name",
    "fieldname": "guest_name",
-   "fieldtype": "Data",
-   "label": "Guest Name"
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Guest Name",
+   "options": "Billing Information",
+   "read_only": 1
   },
   {
    "fieldname": "signature",
-   "fieldtype": "Data",
+   "fieldtype": "Signature",
    "label": "Signature"
   },
   {
+   "default": "0",
    "fieldname": "return_room_key",
-   "fieldtype": "Data",
+   "fieldtype": "Check",
    "label": "Return Room key"
   },
   {
@@ -68,43 +83,114 @@
    "read_only": 1
   },
   {
-   "fieldname": "price_details",
-   "fieldtype": "Table",
-   "label": "Price details",
-   "options": "Price Details"
-  },
-  {
    "fieldname": "column_break_huthx",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "label": "Payment Details"
   },
   {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
    "fieldname": "total",
-   "fieldtype": "Data",
-   "label": "Total"
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total"
   },
   {
    "fieldname": "invoice_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Invoice Date"
   },
   {
+   "fetch_from": "guest_name.identification",
    "fieldname": "identification_number",
    "fieldtype": "Data",
    "label": "Identification Number"
   },
   {
+   "fetch_from": "guest_name.phone_number",
    "fieldname": "phone_number",
    "fieldtype": "Data",
    "label": "Phone Number"
+  },
+  {
+   "fetch_from": "guest_name.subtotal",
+   "fieldname": "advance_payment",
+   "fieldtype": "Currency",
+   "label": "Advance Payment"
+  },
+  {
+   "fetch_from": "guest_name.room_type",
+   "fieldname": "room_details",
+   "fieldtype": "Data",
+   "label": "Room Details"
+  },
+  {
+   "fetch_from": "guest_name.tax",
+   "fieldname": "vat_taxes",
+   "fieldtype": "Currency",
+   "label": "Vat Taxes"
+  },
+  {
+   "fieldname": "car_services",
+   "fieldtype": "Currency",
+   "label": "Car services"
+  },
+  {
+   "fieldname": "service_charge",
+   "fieldtype": "Currency",
+   "label": "Service Charges"
+  },
+  {
+   "fetch_from": "guest_name.price",
+   "fieldname": "room_charge",
+   "fieldtype": "Currency",
+   "label": "Room Charge"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Invoice ID",
+   "options": "INV--.####"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "billing_id",
+   "fieldtype": "Link",
+   "label": "Billing iD",
+   "options": "Reservation"
+  },
+  {
+   "fieldname": "column_break_5plql",
+   "fieldtype": "Column Break",
+   "label": "Invoice to"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "Credit Card\nDebit Card\nGpay"
+  },
+  {
+   "fetch_from": "guest_name.ac_prices",
+   "fieldname": "ac_charges",
+   "fieldtype": "Currency",
+   "label": "Ac Charges"
+  },
+  {
+   "fieldname": "amount_due",
+   "fieldtype": "Currency",
+   "label": "Amount Due"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-05-15 10:57:46.907800",
+ "modified": "2023-05-15 13:10:08.027592",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Final Invoice",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
