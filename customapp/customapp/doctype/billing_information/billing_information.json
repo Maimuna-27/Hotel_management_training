@@ -88,7 +88,8 @@
    "fieldname": "price",
    "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "Price"
+   "label": "Price",
+   "read_only": 1
   },
   {
    "fieldname": "subtotal",
@@ -185,7 +186,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-06-06 10:59:49.267458",
+ "modified": "2023-06-06 12:45:19.326936",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Billing Information",

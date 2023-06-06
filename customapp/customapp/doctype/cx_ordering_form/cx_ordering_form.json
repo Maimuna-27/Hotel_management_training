@@ -195,7 +195,8 @@
   {
    "fieldname": "subtotals",
    "fieldtype": "Currency",
-   "label": "Subtotal"
+   "label": "Subtotal",
+   "read_only": 1
   },
   {
    "fieldname": "tax",
@@ -216,8 +217,9 @@
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-05-24 10:37:03.631993",
+ "modified": "2023-06-06 12:57:56.100146",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "cx Ordering form",
