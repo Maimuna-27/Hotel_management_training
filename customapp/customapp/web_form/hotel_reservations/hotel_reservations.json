@@ -20,7 +20,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2023-05-03 09:46:54.803316",
+ "modified": "2023-06-06 09:23:30.389328",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "hotel-reservations",
@@ -57,7 +57,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -69,12 +69,12 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
    "allow_read_on_all_link_options": 0,
-   "fieldname": "room_name",
+   "fieldname": "rooms_name",
    "fieldtype": "Link",
    "hidden": 0,
    "label": "Room Name",
@@ -82,6 +82,32 @@
    "max_value": 0,
    "options": "Room Name",
    "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "price_details",
+   "fieldtype": "Currency",
+   "hidden": 0,
+   "label": "Price Details",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Room Name.price",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "default": "0",
+   "fieldname": "availabililty",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Availabililty",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 1,
    "reqd": 0,
    "show_in_filter": 0
   },
@@ -100,8 +126,8 @@
   },
   {
    "allow_read_on_all_link_options": 0,
-   "fieldname": "check_in",
-   "fieldtype": "Duration",
+   "fieldname": "checkin",
+   "fieldtype": "Date",
    "hidden": 0,
    "label": "Check In",
    "max_length": 0,
@@ -112,10 +138,10 @@
   },
   {
    "allow_read_on_all_link_options": 0,
-   "fieldname": "check_out",
-   "fieldtype": "Duration",
+   "fieldname": "checkout",
+   "fieldtype": "Date",
    "hidden": 0,
-   "label": "Check Out",
+   "label": "Check out",
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
@@ -132,7 +158,7 @@
    "max_value": 0,
    "options": "0\n1\n2\n3\n4\n5",
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -145,7 +171,7 @@
    "max_value": 0,
    "options": "0\n1\n2\n3\n4\n5",
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -157,6 +183,32 @@
    "max_length": 0,
    "max_value": 0,
    "options": "Ac\nNon Ac",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "pick_up_required",
+   "fieldtype": "Select",
+   "hidden": 0,
+   "label": "Pick Up Required",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Yes\nNo",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "pick_up_service",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Pick Up Service",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Pick Up Service",
    "read_only": 0,
    "reqd": 0,
    "show_in_filter": 0

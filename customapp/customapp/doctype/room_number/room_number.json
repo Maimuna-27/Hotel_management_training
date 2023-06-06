@@ -9,8 +9,8 @@
  "engine": "InnoDB",
  "field_order": [
   "room_number",
-  "description",
-  "room_name_assigned"
+  "room_name_assigned",
+  "description"
  ],
  "fields": [
   {
@@ -33,7 +33,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-26 12:41:36.673678",
+ "modified": "2023-06-06 10:16:09.760603",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Room Number",

@@ -24,6 +24,7 @@
   "room_type",
   "acnon_ac",
   "total_price_column",
+  "type_of_payment",
   "price",
   "ac_prices",
   "subtotal_without_tax",
@@ -45,6 +46,7 @@
    "fieldname": "guest_name",
    "fieldtype": "Data",
    "label": "Guest Name",
+   "read_only": 1,
    "reqd": 1,
    "unique": 1
   },
@@ -110,6 +112,7 @@
    "label": "route"
   },
   {
+   "fetch_from": "reservation_id.ac_non_ac",
    "fieldname": "acnon_ac",
    "fieldtype": "Link",
    "label": "Ac/Non Ac",
@@ -170,13 +173,19 @@
    "fieldtype": "Currency",
    "label": "Subtotal without Tax",
    "read_only": 1
+  },
+  {
+   "fieldname": "type_of_payment",
+   "fieldtype": "Select",
+   "label": "Type Of Payment",
+   "options": "Debit Card\nCredit Card\nOnline Payment"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-05-24 10:31:36.147976",
+ "modified": "2023-06-06 10:59:49.267458",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Billing Information",
