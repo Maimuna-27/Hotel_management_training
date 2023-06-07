@@ -1,4 +1,5 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
@@ -14,16 +15,17 @@
   "rooms_name",
   "price_details",
   "availabililty",
+  "pick_up_required",
+  "pick_up_service",
   "column_break_netub",
   "checkin",
   "checkout",
   "adults",
   "children",
   "ac_non_ac",
+  "special_mention_or_requirement",
   "amended_from",
-  "route",
-  "pick_up_required",
-  "pick_up_service"
+  "route"
  ],
  "fields": [
   {
@@ -129,13 +131,18 @@
    "fieldtype": "Link",
    "label": "Room Name",
    "options": "Room Name"
+  },
+  {
+   "fieldname": "special_mention_or_requirement",
+   "fieldtype": "Small Text",
+   "label": "Special Mention or Requirement"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-05-15 09:09:52.747995",
+ "modified": "2023-06-07 09:32:47.481793",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Reservation",

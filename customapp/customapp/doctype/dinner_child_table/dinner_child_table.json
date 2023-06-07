@@ -14,6 +14,11 @@
   {
    "fieldname": "dinner_dish",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Dinner Dish",
    "options": "Dinner"
   },
@@ -28,13 +33,18 @@
    "fetch_from": "dinner_dish.dessert",
    "fieldname": "dessert",
    "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Dessert"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-05-22 09:57:01.078799",
+ "modified": "2023-06-07 10:34:49.364549",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Dinner Child Table",

@@ -19,34 +19,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Reservation",
-   "link_count": 2,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Reservations",
-   "link_count": 0,
-   "link_to": "Reservation",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Billing Info",
-   "link_count": 0,
-   "link_to": "Billing Information",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Services",
    "link_count": 3,
    "onboard": 0,
@@ -243,9 +215,47 @@
    "link_type": "Page",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reservation",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reservations",
+   "link_count": 0,
+   "link_to": "Reservation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Info",
+   "link_count": 0,
+   "link_to": "Billing Information",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Final Invoice",
+   "link_count": 0,
+   "link_to": "Final Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-05-14 10:44:20.597153",
+ "modified": "2023-06-07 08:50:14.022393",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel Management",
