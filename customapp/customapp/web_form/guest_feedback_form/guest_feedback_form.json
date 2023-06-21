@@ -1,4 +1,5 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "accept_payment": 0,
  "allow_comments": 0,
  "allow_delete": 0,
@@ -22,7 +23,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2023-06-07 10:37:11.512999",
+ "modified": "2023-06-14 18:40:28.919742",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "guest-feedback-form",
@@ -274,6 +275,18 @@
    "fieldtype": "Rating",
    "hidden": 0,
    "label": "",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "how_should_we_improve",
+   "fieldtype": "Small Text",
+   "hidden": 0,
+   "label": "How should we Improve?",
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,

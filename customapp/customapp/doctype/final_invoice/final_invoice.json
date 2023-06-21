@@ -14,6 +14,7 @@
   "invoice_date",
   "check_in",
   "check_out",
+  "column_break_be8zs",
   "column_break_5plql",
   "guest_name",
   "identification_number",
@@ -21,7 +22,6 @@
   "room_number",
   "room_details",
   "column_break_vevhp",
-  "payment_details",
   "payment_type",
   "room_charge",
   "ac_charges",
@@ -31,6 +31,7 @@
   "total",
   "advance_payment",
   "amount_due",
+  "column_break_uuj0s",
   "signature",
   "return_room_key",
   "amended_from"
@@ -185,19 +186,22 @@
   },
   {
    "fieldname": "column_break_vevhp",
+   "fieldtype": "Tab Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "column_break_be8zs",
    "fieldtype": "Column Break"
   },
   {
-   "bold": 1,
-   "fieldname": "payment_details",
-   "fieldtype": "Heading",
-   "label": "Payment Details"
+   "fieldname": "column_break_uuj0s",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-06-06 12:47:04.352174",
+ "modified": "2023-06-08 11:18:41.514225",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Final Invoice",

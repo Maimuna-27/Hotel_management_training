@@ -1,0 +1,119 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-11 05:27:07.361958",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "guest_name",
+  "room_number",
+  "service_required",
+  "elaborate",
+  "column_break_8lq5a",
+  "number_of_guest",
+  "preferred_timeframes",
+  "language_preferences",
+  "amended_from",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "RS-ID",
+   "options": "RS--.###"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room Number"
+  },
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "label": "Guest Name"
+  },
+  {
+   "bold": 1,
+   "fieldname": "service_required",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service Required",
+   "options": "Room Service"
+  },
+  {
+   "fieldname": "elaborate",
+   "fieldtype": "Small Text",
+   "label": "Elaborate "
+  },
+  {
+   "fieldname": "number_of_guest",
+   "fieldtype": "Select",
+   "label": "Number of guests",
+   "options": "1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Room Service form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "language_preferences",
+   "fieldtype": "Data",
+   "label": "Language Preferences"
+  },
+  {
+   "fieldname": "preferred_timeframes",
+   "fieldtype": "Time",
+   "label": "Preferred Timeframe"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  },
+  {
+   "fieldname": "column_break_8lq5a",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-12 11:35:32.538862",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Room Service form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

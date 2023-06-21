@@ -1,4 +1,5 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "accept_payment": 0,
  "allow_comments": 0,
  "allow_delete": 0,
@@ -21,7 +22,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2023-06-07 09:45:56.870127",
+ "modified": "2023-06-14 18:40:49.150745",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "hotel-reservations",

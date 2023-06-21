@@ -1,0 +1,202 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-11 06:19:16.912748",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "guest_name",
+  "room_number",
+  "trip_information_section",
+  "type_of_trip",
+  "one_way",
+  "round_up",
+  "city_tours",
+  "amended_from",
+  "pickup_datetime",
+  "return_pickup_datetime",
+  "number_of_hours",
+  "number_of_luggage",
+  "number_of_passengers",
+  "column_break_h1g83",
+  "pickup_location",
+  "drop_off_location",
+  "additional_stops",
+  "yes",
+  "no",
+  "specify_stops",
+  "child_car_seat_required",
+  "additional_requirements",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "TR ID",
+   "options": "TR-.###"
+  },
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guest Name"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room Number"
+  },
+  {
+   "fieldname": "trip_information_section",
+   "fieldtype": "Section Break",
+   "label": "Trip Information"
+  },
+  {
+   "fieldname": "type_of_trip",
+   "fieldtype": "Heading",
+   "label": "Type of Trip"
+  },
+  {
+   "default": "0",
+   "fieldname": "one_way",
+   "fieldtype": "Check",
+   "label": "One way "
+  },
+  {
+   "default": "0",
+   "fieldname": "round_up",
+   "fieldtype": "Check",
+   "label": "Round up"
+  },
+  {
+   "default": "0",
+   "fieldname": "city_tours",
+   "fieldtype": "Check",
+   "label": "City Tours"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transport reservation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "pickup_datetime",
+   "fieldtype": "Datetime",
+   "label": "Pickup Date/Time"
+  },
+  {
+   "fieldname": "return_pickup_datetime",
+   "fieldtype": "Datetime",
+   "label": "Return Pickup Date/Time"
+  },
+  {
+   "fieldname": "number_of_hours",
+   "fieldtype": "Data",
+   "label": "Number of hours"
+  },
+  {
+   "fieldname": "number_of_luggage",
+   "fieldtype": "Select",
+   "label": "Number of Luggage",
+   "options": "0\n1\n2\n3\n4"
+  },
+  {
+   "fieldname": "number_of_passengers",
+   "fieldtype": "Select",
+   "label": "Number of Passengers",
+   "options": "0\n1\n2\n3"
+  },
+  {
+   "fieldname": "column_break_h1g83",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pickup_location",
+   "fieldtype": "Data",
+   "label": "Pickup Location"
+  },
+  {
+   "fieldname": "drop_off_location",
+   "fieldtype": "Data",
+   "label": "Drop Off Location"
+  },
+  {
+   "fieldname": "additional_stops",
+   "fieldtype": "Heading",
+   "label": "Additional Stops?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "specify_stops",
+   "fieldtype": "Small Text",
+   "label": "If yes,specify Stops"
+  },
+  {
+   "default": "0",
+   "fieldname": "child_car_seat_required",
+   "fieldtype": "Check",
+   "label": "Child car seat Required?"
+  },
+  {
+   "fieldname": "additional_requirements",
+   "fieldtype": "Small Text",
+   "label": "Additional Requirements"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route",
+   "read_only": 1
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-14 12:55:30.908584",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Transport reservation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
