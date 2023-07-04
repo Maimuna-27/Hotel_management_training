@@ -1,0 +1,1 @@
+Check out is Complete for room number {{doc.room_number}}!!

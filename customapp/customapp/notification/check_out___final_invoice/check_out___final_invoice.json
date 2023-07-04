@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-07-04 09:29:53.123962",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Final Invoice",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Check out is Complete for room number {{doc.room_number}}!!",
+ "modified": "2023-07-04 09:31:42.601369",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Check Out - Final Invoice",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  },
+  {
+   "receiver_by_role": "Hotel Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{doc.guest_name}} checked out from {{doc.room_number}} on {{doc.check_out}}"
+}

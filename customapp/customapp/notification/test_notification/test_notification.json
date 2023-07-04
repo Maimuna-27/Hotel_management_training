@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-07-04 08:54:04.762935",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "cx Ordering form",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here ABCDEFG",
+ "modified": "2023-07-04 09:01:04.031913",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Test Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  },
+  {
+   "receiver_by_role": "Hotel Chef"
+  },
+  {
+   "receiver_by_role": "Hotel Employee"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "New Order {{doc.categories}} for {{doc.room_number}}"
+}

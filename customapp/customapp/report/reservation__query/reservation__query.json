@@ -1,0 +1,39 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2023-07-04 07:38:19.294007",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Hotel Bills",
+ "modified": "2023-07-04 12:41:10.644586",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "Reservation--Query",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    b.reservation_id,\n    r.guest_name,\n    r.rooms_name,\n    r.checkin,\n    r.checkout,\n    r.ac_non_ac,\n    b.subtotal_without_tax,\n    b.tax,\n    b.ac_prices,\n    b.subtotal\nFROM \n    `tabReservation` AS r\nJOIN \n    (\n        SELECT DISTINCT reservation_id, guest_name, subtotal_without_tax,tax,ac_prices,subtotal\n        FROM `tabBilling Information`\n    ) AS b ON r.guest_name = b.guest_name\n    \nGROUP BY\n    r.guest_name,\n    b.reservation_id;",
+ "ref_doctype": "Reservation",
+ "report_name": "Reservation--Query",
+ "report_script": "",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Hotel Manager"
+  },
+  {
+   "role": "Hotel Employee"
+  }
+ ]
+}

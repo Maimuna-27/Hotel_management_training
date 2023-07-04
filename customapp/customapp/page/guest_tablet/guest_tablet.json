@@ -1,0 +1,26 @@
+{
+ "content": null,
+ "creation": "2023-07-03 14:16:11.297534",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-07-03 14:24:36.338766",
+ "modified_by": "Administrator",
+ "module": "CustomApp",
+ "name": "guest-tablet",
+ "owner": "Administrator",
+ "page_name": "guest-tablet",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Guest Tablet"
+}
