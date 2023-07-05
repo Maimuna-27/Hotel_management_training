@@ -1,0 +1,5 @@
+[pre_model_sync]
+# Add any pre-model sync patches here
+
+[post_model_sync]
+customapp.customapp.doctype.test_patch_doc.Patches.set_status
