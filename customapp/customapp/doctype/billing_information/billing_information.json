@@ -54,22 +54,26 @@
   {
    "fieldname": "identification",
    "fieldtype": "Data",
-   "label": "Identification"
+   "label": "Identification",
+   "reqd": 1
   },
   {
    "fieldname": "phone_number",
    "fieldtype": "Phone",
-   "label": "Phone Number"
+   "label": "Phone Number",
+   "reqd": 1
   },
   {
    "fieldname": "full_adfress",
    "fieldtype": "Small Text",
-   "label": "Full Address"
+   "label": "Full Address",
+   "reqd": 1
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "allocated_room_number",
@@ -77,6 +81,7 @@
    "in_list_view": 1,
    "label": "Allocated Room Number",
    "options": "Room Number",
+   "reqd": 1,
    "search_index": 1
   },
   {
@@ -135,12 +140,14 @@
   {
    "fieldname": "invoice_due_date",
    "fieldtype": "Date",
-   "label": "Invoice Due Date"
+   "label": "Invoice Due Date",
+   "reqd": 1
   },
   {
    "fieldname": "invoice_date",
    "fieldtype": "Date",
-   "label": "Invoice Date"
+   "label": "Invoice Date",
+   "reqd": 1
   },
   {
    "fetch_from": "reservation_id.checkout",
@@ -156,7 +163,8 @@
    "fieldtype": "Data",
    "label": "Room Type",
    "options": "Reservation",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "tax",
@@ -187,7 +195,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-07-04 07:14:58.959752",
+ "modified": "2023-07-06 10:47:05.643543",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Billing Information",
@@ -245,5 +253,7 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

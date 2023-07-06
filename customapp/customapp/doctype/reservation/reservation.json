@@ -68,7 +68,8 @@
    "fieldname": "ac_non_ac",
    "fieldtype": "Select",
    "label": "Ac Non Ac",
-   "options": "Ac\nNon Ac"
+   "options": "Ac\nNon Ac",
+   "reqd": 1
   },
   {
    "fieldname": "amended_from",
@@ -118,19 +119,22 @@
   {
    "fieldname": "checkin",
    "fieldtype": "Date",
-   "label": "Check In"
+   "label": "Check In",
+   "reqd": 1
   },
   {
    "fieldname": "checkout",
    "fieldtype": "Date",
-   "label": "Check out"
+   "label": "Check out",
+   "reqd": 1
   },
   {
    "fetch_from": "amended_from.rooms_name",
    "fieldname": "rooms_name",
    "fieldtype": "Link",
    "label": "Room Name",
-   "options": "Room Name"
+   "options": "Room Name",
+   "reqd": 1
   },
   {
    "fieldname": "special_mention_or_requirement",
@@ -142,7 +146,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-06-07 09:32:47.481793",
+ "modified": "2023-07-05 13:27:33.612083",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Reservation",

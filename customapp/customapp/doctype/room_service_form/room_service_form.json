@@ -32,12 +32,14 @@
    "fieldname": "room_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Room Number"
+   "label": "Room Number",
+   "reqd": 1
   },
   {
    "fieldname": "guest_name",
    "fieldtype": "Data",
-   "label": "Guest Name"
+   "label": "Guest Name",
+   "reqd": 1
   },
   {
    "bold": 1,
@@ -45,7 +47,8 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Service Required",
-   "options": "Room Service"
+   "options": "Room Service",
+   "reqd": 1
   },
   {
    "fieldname": "elaborate",
@@ -70,7 +73,7 @@
   {
    "fieldname": "language_preferences",
    "fieldtype": "Data",
-   "label": "Language Preferences"
+   "label": "Preferred Language"
   },
   {
    "fieldname": "preferred_timeframes",
@@ -92,7 +95,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-06-12 11:35:32.538862",
+ "modified": "2023-07-06 10:35:45.522646",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Room Service form",
@@ -115,5 +118,7 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

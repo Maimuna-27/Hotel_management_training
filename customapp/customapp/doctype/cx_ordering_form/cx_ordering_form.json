@@ -53,7 +53,8 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Categories",
-   "options": "Dining"
+   "options": "Dining",
+   "reqd": 1
   },
   {
    "fieldname": "room_number",
@@ -219,7 +220,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-06-08 13:12:19.918961",
+ "modified": "2023-07-06 10:36:53.162972",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "cx Ordering form",
@@ -268,5 +269,7 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

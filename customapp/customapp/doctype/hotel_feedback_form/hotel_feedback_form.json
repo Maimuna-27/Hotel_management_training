@@ -86,13 +86,15 @@
    "fieldname": "check_in_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Check in Date"
+   "label": "Check in Date",
+   "reqd": 1
   },
   {
    "fieldname": "check_out_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Check Out Date"
+   "label": "Check Out Date",
+   "reqd": 1
   },
   {
    "fieldname": "did_you_visit_our_hotel_before",
@@ -227,7 +229,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-08 11:02:01.951508",
+ "modified": "2023-07-06 10:37:19.482099",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Hotel_Feedback_Form",
@@ -262,5 +264,7 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

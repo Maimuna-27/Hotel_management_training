@@ -11,7 +11,7 @@ class TestReservation(FrappeTestCase):
 		doc = frappe.get_doc({
                "doctype" : "Reservation",
 			   "room_number" : "101",
-			   "room_name" : "Classic Bedroom,
+			   "room_name" : "Classic Bedroom"
 			   
 			   
 		})

@@ -45,13 +45,15 @@
    "fieldname": "guest_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Guest Name"
+   "label": "Guest Name",
+   "reqd": 1
   },
   {
    "fieldname": "room_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Room Number"
+   "label": "Room Number",
+   "reqd": 1
   },
   {
    "fieldname": "trip_information_section",
@@ -93,7 +95,8 @@
   {
    "fieldname": "pickup_datetime",
    "fieldtype": "Datetime",
-   "label": "Pickup Date/Time"
+   "label": "Pickup Date/Time",
+   "reqd": 1
   },
   {
    "fieldname": "return_pickup_datetime",
@@ -115,7 +118,8 @@
    "fieldname": "number_of_passengers",
    "fieldtype": "Select",
    "label": "Number of Passengers",
-   "options": "0\n1\n2\n3"
+   "options": "0\n1\n2\n3",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_h1g83",
@@ -124,7 +128,8 @@
   {
    "fieldname": "pickup_location",
    "fieldtype": "Data",
-   "label": "Pickup Location"
+   "label": "Pickup Location",
+   "reqd": 1
   },
   {
    "fieldname": "drop_off_location",
@@ -175,7 +180,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-14 12:55:30.908584",
+ "modified": "2023-07-06 10:44:58.407134",
  "modified_by": "Administrator",
  "module": "CustomApp",
  "name": "Transport reservation",
@@ -198,5 +203,7 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
